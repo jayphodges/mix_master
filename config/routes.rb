@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  resources :artists, only: [:index, :new, :create, :show]
+  root to: 'artists#index'
+  resources :artists
 end
